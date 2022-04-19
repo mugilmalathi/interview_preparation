@@ -15,6 +15,7 @@ app.get("/data", limiter, (req, res)=>{
             status: "Success",
             data: datas
         })
+        console.log(req.ip)
     } catch (err) {
         console.log(err)
     }
